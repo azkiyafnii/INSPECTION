@@ -23,10 +23,11 @@
   <properties>
      <maven.compiler.source>21</maven.compiler.source>
      <maven.compiler.target>21</maven.compiler.target>
-	  <sonar.projectKey>azkiyafanii_inspection</sonar.projectKey>
-	  <sonar.organization>azkiyafanii</sonar.organization>
-	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
- </properties>
+     
+     <sonar.organization>azkiyafanii-1</sonar.organization>
+     <sonar.projectKey>azkiyafanii_INSPECTION</sonar.projectKey>
+     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
   
 </project>
 
