@@ -26,8 +26,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build, test, and analyze
+   - name: Build, test, and analyze
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=azkiyafanii-1 -Dsonar.projectKey=azkiyafanii_INSPECTION
