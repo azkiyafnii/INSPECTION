@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 
 
 import static org.junit.Assert.*;
+=======
+package src.test.java;
+
+import static org.junit.Assert.*;
+import src.main.java.*;
+>>>>>>> 7f6f9aa8b94744b1029388aadefdb4feebd19e00
 import org.junit.Test;
 
 public class CounterTest {

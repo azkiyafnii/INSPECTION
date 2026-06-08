@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+package src.main.java;
+>>>>>>> 7f6f9aa8b94744b1029388aadefdb4feebd19e00
 
 public class Counter {
 
