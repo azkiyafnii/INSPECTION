@@ -1,6 +1,3 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
 name: Build Project
 
 on:
@@ -11,26 +8,20 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-<<<<<<< HEAD
+
     - name: Set up JDK 21
       uses: actions/setup-java@v3
       with:
         java-version: '21'
-=======
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
->>>>>>> 7f6f9aa8b94744b1029388aadefdb4feebd19e00
         distribution: 'temurin'
         cache: maven
+
     - name: Build, test, and analyze
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=azkiyafnii -Dsonar.projectKey=azkiyafnii_INSPECTION
